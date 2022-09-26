@@ -1,3 +1,5 @@
+TO SEE PLOTS FOR THIS PROJECT, SEE PNG FILES IN THE REPOSITORY, OR RUN script.py.
+
 In this project, I analyze simulated learner data. This simulated data was supplied by Codecademy. Such data is similar to actual learner data that curriculum teams would be interested in drawing conclusions from.
 
 The codecademy DataFrame head:
@@ -20,12 +22,12 @@ The intercept (Intercept) is 13.21. This intercept suggests that if a user compl
 A user who previously completed 20 content items is expected to score 39.35 points on the quiz based on our linear regression model.
 
 We plot a histogram of the residuals to check the normality assumption for linear regression.
-The residuals histogram appears to be normally distributed. (You must run script.py on your machine to view the plots.)
+The residuals histogram appears to be normally distributed.
 
 We check the homoscedasticity assumption for linear regression by scatterplotting the residuals by the fitted values.
 The scatter plot appears to meet the homoscedasticity assumption, as the points are randomly scattered and form no patterns.
 
-We now seek to answer the question: Do learners who take lesson A or B perform better on the quiz? We create a boxplot to answer this question. (You must run script.py on your machine to view the plot.)
+We now seek to answer the question: Do learners who take lesson A or B perform better on the quiz? We create a boxplot to answer this question. 
 
 Based on the boxplot, it is clear that students who took Lesson A immediately before the quiz outperform those who took Lesson B.
 
@@ -41,4 +43,4 @@ The mean quiz score for learners who took lesson A is 59.22.
 The mean quiz score for learners who took lesson B is 47.58.
 The mean difference is 11.64.
 
-Lastly, we plot score by number of learning items completed, colored by lesson for even more insight into the data. (You must run script.py on your machine to view this plot.)
+Lastly, we plot score by number of learning items completed, colored by lesson for even more insight into the data. 
