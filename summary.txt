@@ -1,0 +1,44 @@
+In this project, I analyze simulated learner data. This simulated data was supplied by Codecademy. Such data is similar to actual learner data that curriculum teams would be interested in drawing conclusions from.
+
+The codecademy DataFrame head:
+   score  completed    lesson
+0   82.7       35.0  Lesson A
+1   65.2       31.0  Lesson A
+2   55.3       33.0  Lesson A
+3   28.8       25.0  Lesson B
+4   31.2       18.0  Lesson B
+
+There appears to be a linear relationship between the x-variable (content items completed) and the y-variable (quiz score) based on the scatter plot, with the following coefficients:
+
+Intercept    13.214113
+completed     1.306826
+dtype: float64
+
+The intercept (Intercept) is 13.21. This intercept suggests that if a user completed 0 content items, they would receive a score of 13.21/100. The slope is 1.31. This slope (completed) indicates that for every 1 content item completed, the user's score can be expected to rise by 1.31 points.
+
+39.350624877322936
+A user who previously completed 20 content items is expected to score 39.35 points on the quiz based on our linear regression model.
+
+We plot a histogram of the residuals to check the normality assumption for linear regression.
+The residuals histogram appears to be normally distributed. (You must run script.py on your machine to view the plots.)
+
+We check the homoscedasticity assumption for linear regression by scatterplotting the residuals by the fitted values.
+The scatter plot appears to meet the homoscedasticity assumption, as the points are randomly scattered and form no patterns.
+
+We now seek to answer the question: Do learners who take lesson A or B perform better on the quiz? We create a boxplot to answer this question. (You must run script.py on your machine to view the plot.)
+
+Based on the boxplot, it is clear that students who took Lesson A immediately before the quiz outperform those who took Lesson B.
+
+We now create and fit a linear regression model that predicts score using lesson as the predictor.
+
+Intercept             59.220
+lesson[T.Lesson B]   -11.642
+dtype: float64
+
+The intercept (Intercept) is 59.22. This indicates that learners who took Lesson A received a mean score of 59.22 on the quiz. The slope (lesson[T.Lesson B]) is -11.64. This indicates that learners who took Lesson B received a mean score 11.64 points LESS than 59.22 (the mean score for Lesson A takers).
+
+The mean quiz score for learners who took lesson A is 59.22.
+The mean quiz score for learners who took lesson B is 47.58.
+The mean difference is 11.64.
+
+Lastly, we plot score by number of learning items completed, colored by lesson for even more insight into the data. (You must run script.py on your machine to view this plot.)
